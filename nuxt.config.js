@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: nut
+ * @Date: 2019-11-01 11:14:45
+ * @LastEditors: nut
+ * @LastEditTime: 2019-11-06 17:38:44
+ */
 
 module.exports = {
   mode: 'universal',
@@ -5,7 +13,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '坚果小屋',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,13 +31,20 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '@/assets/scss/elements/element-variables.scss',
+    '@/assets/scss/main.scss'
   ],
+  router:{
+    middleware: ['route']
+  },
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/nuxt-axios',
+    '@/plugins/animation'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -40,11 +55,17 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
+  // axios: {
+  //   proxy: true
+  // },
   /*
   ** Build configuration
   */
   build: {
+    vendor: ['axios'],
     transpile: [/^element-ui/],
     /*
     ** You can extend webpack config here

@@ -1,0 +1,112 @@
+@import '_variables.scss';
+
+html,
+body,
+#__nuxt,
+#__layout,
+#app {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.box-container {
+    padding: 3rem 1.5rem;
+    transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s;
+    opacity: 1;
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #f7f7f7;
+}
+
+@media screen and (min-width: 1088px) {
+    .container {
+        max-width: 960px;
+        width: 960px;
+        margin:0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1152px;
+        width: 1152px;
+        margin: 0 auto;
+    }
+}
+.width-100{
+    width:100%;
+}
+.color-d {
+    color: $color-d;
+}
+
+.color-red {
+    color: #e94328;
+}
+
+.font-big {
+    font-size: 30px;
+}
+
+.font-medium {
+    font-size: 28px;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.font-info {
+    font-size: 15px;
+}
+
+.font-text {
+    font-size: 20px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+//flex
+.flex-1 {
+    flex: 1;
+}
+
+//margin
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+//link
+.link-underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+//display
+.display-ib {
+    display: inline-block;
+}
+.click{
+    cursor: pointer;
+}
