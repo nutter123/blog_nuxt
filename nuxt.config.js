@@ -3,8 +3,8 @@
  * @version: 
  * @Author: nut
  * @Date: 2019-11-01 11:14:45
- * @LastEditors: nut
- * @LastEditTime: 2019-11-06 17:38:44
+ * @LastEditors  : nut
+ * @LastEditTime : 2019-12-20 11:49:03
  */
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: '坚果小屋',
+    title: '坚果小屋 \u2022 个人博客',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
